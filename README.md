@@ -77,11 +77,11 @@ revision: 1833
             if palabra_limpia:
                 todas_las_palabras.append(palabra_limpia.lower())
 
-conteo = Counter(todas_las_palabras)
-top_50 = conteo.most_common(50)
+    conteo = Counter(todas_las_palabras)
+    top_50 = conteo.most_common(50)
 
-print("Cantidad de vocales:", contador_vocales)
-print("Cantidad de consonantes:", contador_consonantes)
-print("\nTop 50 palabras más comunes:")
-for palabra, cantidad in top_50:
-    print(f"{palabra}: {cantidad}")
+    print("Cantidad de vocales:", contador_vocales)
+    print("Cantidad de consonantes:", contador_consonantes)
+    print("\nTop 50 palabras más comunes:")
+    for palabra, cantidad in top_50:
+        print(f"{palabra}: {cantidad}")
